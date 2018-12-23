@@ -5,14 +5,3 @@
 [[redirects]]
   from = "/*"
   to = "/"
-
-[[redirects]]
-  from = "/"
-  to = "/tw"
-  conditions = {Language = ["en"]}
-
-[[redirects]]
-  from = "/en"
-  to = "/"
-  status = 200
-
