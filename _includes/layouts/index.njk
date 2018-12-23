@@ -24,7 +24,7 @@
         <meta property="og:image" content="img/share.jpg" />
         <meta property="og:type" content="website" />
 
-        <link rel="stylesheet" media="screen" href="style.css" />
+        <link rel="stylesheet" media="screen" href="build/style.css" />
 
         <script>
             (function (i, s, o, g, r, a, m) {
@@ -138,8 +138,8 @@
                             href="https://www.facebook.com/PKGammaDigital/"
                             target="_blank">Facebook</a></li>
                         <li><a class=""
-                            href="https://pkgamma.com/tw"
-                            target="_blank">正體中文</a></li>
+                            href="{{alt_language_url}}"
+                            target="_blank">{{alt_language}}</a></li>
                     </ul>
                 </nav>
             </div>
@@ -149,20 +149,18 @@
             <header class="hero hero--home">
                 <div class="hero__content
                     fadeUp">
-                    <h2 class="h1">{{site_title_line}}</h2>
+                    <h2 class="h1">
+                        {{title_line_1}}
+                            </br>
+                        {{title_line_2}}
+                    </h2>
                     <div class="hero__para">
                         <div class="section
                             section--flushBottom">
-                            <p class="p--thin">PKGamma
-                                is a digital agency
-                                with roots in San
-                                Francisco and
-                                Taipei.</br>We
-                                specializes in website
-                                design, development,
-                                e-commerce solutions,
-                                branding, and digital
-                                marketing.
+                            <p class="p--thin">
+                                {{subtitle_line_1}}
+                                    </br>
+                                {{subtitle_line_2}}
                             </p>
                         </div>
                     </div>
@@ -245,9 +243,7 @@
                 <div class="wrapper-thin" data-animate-in="up">
                     <h3 class="h2" style="font-family:
                         'GothamLightRegular',Helvetica, Verdana,
-                        sans-serif;">Here at
-                        PKGamma, we hold a passion for brilliant ideas,
-                        execution, and of course, innovation.
+                        sans-serif;">{{bottom_title}}
                     </h3>
                     <div class="section section--flushTop">
                         <div class="row text-center">
@@ -260,7 +256,7 @@
                                             <use
                                                 xlink:href="#shape-web-mobile"></use>
                                         </svg>
-                                        <figcaption>Website Development</figcaption>
+                                        <figcaption>{{bottom_icon_1}}</figcaption>
                                     </figure>
                                 </div>
                             </div>
@@ -273,7 +269,7 @@
                                             <use
                                                 xlink:href="#shape-branding"></use>
                                         </svg>
-                                        <figcaption>Branding</figcaption>
+                                        <figcaption>{{bottom_icon_2}}</figcaption>
                                     </figure>
                                 </div>
                             </div>
@@ -286,7 +282,7 @@
                                             <use
                                                 xlink:href="#shape-strategy"></use>
                                         </svg>
-                                        <figcaption>Digital Marketing</figcaption>
+                                        <figcaption>{{bottom_icon_3}}</figcaption>
                                     </figure>
                                 </div>
                             </div>
@@ -298,24 +294,22 @@
         <footer class="site-footer" data-animate-in>
             <div class="wrapper">
                 <div class="footer-contact">
-                    <div class="h2">GET IN TOUCH</div>
+                    <div class="h2">{{contact_title}}</div>
                     <div class="section">
-                        <p>Please contact us if you would like to work
-                            together.
+                        <p>{{contact_subtitle}}
                         </p>
                         <ul class="footer-contact__list">
                             <li>
                                 <a style="font-family:
                                     'GothamMediumRegular',Helvetica,
                                     Verdana, sans-serif;"
-                                    href="mailto:contact@pkgamma.com">contact@pkgamma.com</a>
+                                    href="mailto:{{email}}">{{email}}</a>
                             </li>
                             <li>
                                 <a style="font-family:
                                     'GothamMediumRegular',Helvetica,
                                     Verdana, sans-serif;"
-                                    href="tel:+1.347.766.4206">+1
-                                (347) 766 4206</a>
+                                    href="tel:{{phone}}">{{phone}}</a>
                             </li>
                         </ul>
                     </div>
@@ -323,11 +317,9 @@
             </div>
             <div class="site-extras">
                 <div>
-                    <p class="p-sm text-light">&copy; 2016 PKGamma
-                        Digital Agency. All rights reserved. <a
-                            class="text-light"
-                            href="https://philkuo.com/disclaimer">Copyright
-                        &amp; Disclaimer Statement</a>
+                    <p class="p-sm text-light">
+                        {{copyright}}
+                        <a class="text-light" href="https://philkuo.com/disclaimer">{{copyright_disclaimer}}</a>
                     </p>
                 </div>
             </div>
@@ -343,7 +335,7 @@
         <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 
         <!-- JAVASCRIPT -->
-        <script type="text/javascript" src="production.min.js"></script>
+        <script type="text/javascript" src="build/production.min.js"></script>
 
         <!-- Facebook SDK for JavaScript -->
         <script>
@@ -363,7 +355,7 @@
                 }
                 js = d.createElement(s);
                 js.id = id;
-                js.src = "https://connect.facebook.net/en_US/sdk.js";
+                js.src = "https://connect.facebook.net/{{lang_id}}/sdk.js";
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         </script>
