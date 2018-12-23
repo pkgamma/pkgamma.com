@@ -2,18 +2,15 @@
   publish = "_site"
   command = "eleventy"
 
-# from any error URLs
 [[redirects]]
   from = "/*"
   to = "/"
 
-# if user use Chinese, redirect to US
 [[redirects]]
   from = "/"
   to = "/tw"
   conditions = {Language = ["en"]}
 
-# for users that were redirected, use /en to go to English site, which shadows index.html
 [[redirects]]
   from = "/en"
   to = "/"
