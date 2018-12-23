@@ -1,7 +1,3 @@
 [build]
   publish = "_site"
   command = "eleventy"
-
-[[redirects]]
-  from = "/*"
-  to = "/"
