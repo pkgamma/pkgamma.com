@@ -2,15 +2,20 @@
   publish = "_site"
   command = "eleventy"
 
-[[redirects]]
-  from = "/*"
-  to = "/tw"
-  conditions = {status = 404}
-
+# from any error URLs
 [[redirects]]
   from = "/*"
   to = "/"
 
+# if user use Chinese, redirect to US
 [[redirects]]
-  from = "/old-path"
-  to = "/new-path"
+  from = "/"
+  to = "/tw"
+  conditions = {Language = ["en"]}
+
+# for users that were redirected, use /en to go to English site, which shadows index.html
+[[redirects]]
+  from = "/en"
+  to = "/"
+  status = 200
+
