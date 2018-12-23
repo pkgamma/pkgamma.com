@@ -16,6 +16,7 @@
     "email": "contact@pkgamma.com",
     "url": "https://pkgamma.com"
   },
+  "license": "MIT",
   "homepage": "https://pkgamma.com",
   "devDependencies": {
     "@11ty/eleventy": "^0.5.4",
@@ -24,5 +25,8 @@
     "luxon": "^1.0.0",
     "markdown-it": "^8.4.1",
     "markdown-it-anchor": "^5.0.2"
+  },
+  "dependencies": {
+    "mustache": "^3.0.1"
   }
 }
