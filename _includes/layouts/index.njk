@@ -1,23 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html lang="{{lang_id_html}}">
+
     <head>
-        <!-- META DATA -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--[if IE]>
         <meta http-equiv="cleartype" content="on" />
         <![endif]-->
         <title>{{title}}</title>
+
+        <link rel="icon" href="http://philkuo.com/assets/web/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="http://philkuo.com/assets/web/favicon.ico" type="image/x-icon">
         <meta name="description" content="{{description}}" />
         <meta name="keywords" content="{{keywords}}" />
-        <!-- ICONS -->
-        <link rel="icon" href="http://philkuo.com/assets/web/favicon.ico"
-            type="image/x-icon">
-        <link rel="shortcut icon"
-            href="http://philkuo.com/assets/web/favicon.ico"
-            type="image/x-icon">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
         <meta property="og:title" content="{{title}}" />
         <meta property="og:description" content="{{description}}" />
         <meta property="og:url" content="{{url}}" />
@@ -46,9 +44,9 @@
         <script async type="text/javascript" src="/build/js/timetravel.js"></script>
         <![endif]-->
     </head>
+
     <body class="no-js">
-        <svg style="display: none;" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
+        <svg style="display: none;" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <symbol viewBox="0 0 68 68" id="shape-branding">
                 <title>branding</title>
                 <path
@@ -119,14 +117,10 @@
             class="site-header">
             <div class="wrapper">
                 <h1 class="logo">
-                    <a
-                        href="https://pkgamma.com/">
-                    <img src="img/logo.png"
-                        alt="PKGamma Digital
-                        Agency">
+                    <a href="{{url}}">
+                    <img src="img/logo.png" alt="{{title}}">
                     </a>
-                    <span class="sr-only">PKGamma
-                    Digital Agency</span>
+                    <span class="sr-only">{{title}}</span>
                 </h1>
                 <nav class="site-nav"
                     id="site-navigation">
@@ -241,9 +235,8 @@
             </section>
             <section class="section" id="about">
                 <div class="wrapper-thin" data-animate-in="up">
-                    <h3 class="h2" style="font-family:
-                        'GothamLightRegular',Helvetica, Verdana,
-                        sans-serif;">{{bottom_title}}
+                    <h3 class="h2" style="font-family: 'GothamLightRegular',source-han-sans-traditional,SourceHanSansTC-Light,STHeitiTC-Light,Arial,Helvetica,sans-serif;">
+                    {{bottom_title}}
                     </h3>
                     <div class="section section--flushTop">
                         <div class="row text-center">
@@ -301,14 +294,12 @@
                         <ul class="footer-contact__list">
                             <li>
                                 <a style="font-family:
-                                    'GothamMediumRegular',Helvetica,
-                                    Verdana, sans-serif;"
+                                    'GothamMediumRegular',source-han-sans-traditional,SourceHanSansTC-Light,STHeitiTC-Light,Arial,Helvetica,sans-serif;"
                                     href="mailto:{{email}}">{{email}}</a>
                             </li>
                             <li>
                                 <a style="font-family:
-                                    'GothamMediumRegular',Helvetica,
-                                    Verdana, sans-serif;"
+                                    'GothamMediumRegular',source-han-sans-traditional,SourceHanSansTC-Light,STHeitiTC-Light,Arial,Helvetica,sans-serif;"
                                     href="tel:{{phone}}">{{phone}}</a>
                             </li>
                         </ul>
@@ -319,7 +310,9 @@
                 <div>
                     <p class="p-sm text-light">
                         {{copyright}}
-                        <a class="text-light" href="https://philkuo.com/disclaimer">{{copyright_disclaimer}}</a>
+                        <a class="text-light" href="https://philkuo.com/disclaimer">
+                        {{copyright_disclaimer}}
+                        </a>
                     </p>
                 </div>
             </div>
@@ -359,10 +352,12 @@
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         </script>
+
         <!-- Facebook Chat -->
         <div class="fb-customerchat" page_id="187246008075413"
             minimized="false">
         </div>
         <!-- Facebook Chat -->
+        
     </body>
 </html>
