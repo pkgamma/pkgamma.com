@@ -1,0 +1,19 @@
+[build]
+  publish = "_site"
+  command = "eleventy"
+
+[[redirects]]
+  from = "/*"
+  to = "/tw"
+  status = 302
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/old-path"
+  to = "/new-path"
+  status = 302

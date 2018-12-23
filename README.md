@@ -12,7 +12,7 @@ The texts on the website are located in the `.njk` files in the root directory. 
 
 Simply run `Eleventy` (assuming all npm packages are installed correctly).
 
-## Updating pkgamma.com
+## Update production (pkgamma.com)
 
 Simply push the local updates to the [git repo](https://github.com/pkgamma/pkgamma.com) and Netlify will updates it automatically.
 
