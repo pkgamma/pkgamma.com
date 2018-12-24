@@ -3,6 +3,8 @@
 / /cn 302 Country=cn
 / /ph 302 Country=ph
 / /th 302 Country=th
+/ /kr 302 Country=kr
+/ /jp 302 Country=jp
 
 # if user want to see english version, take them to /en which shadows the root (English) page
 /en / 200
