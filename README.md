@@ -16,4 +16,8 @@ Simply run `Eleventy` (assuming all npm packages are installed correctly).
 
 Simply push the local updates to the [git repo](https://github.com/pkgamma/pkgamma.com) and Netlify will updates it automatically.
 
+## Add page redirects
+
+Add redirect rules in the `_redirect` file in root. See [Netlify documentation](https://www.netlify.com/docs/redirects/) for details.
+
 Last (or first) updated on Dec 23rd, 2018 (third day of Winter Break).

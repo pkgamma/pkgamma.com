@@ -1,3 +1,8 @@
-/ /tw 302 Country=us
+# if certain countries, redirect to that page
+/ /tw 302 Country=cn,hk,tw
+
+# if user want to see english version, take them to /en which shadows the root (English) page
 /en / 200
-/*  https://pkgamma.com/
+
+# invalid URL gets sent to root (/ doesnt work for some reason)
+/*  https://pkgamma.com
