@@ -4,5 +4,5 @@
 # if user want to see english version, take them to /en which shadows the root (English) page
 /en / 200
 
-# invalid URL gets sent to root (/ doesnt work for some reason)
+# invalid URL gets sent to root (/ doesn't work for some reason)
 /*  https://pkgamma.com
