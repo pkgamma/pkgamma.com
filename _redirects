@@ -1,6 +1,7 @@
 # if certain countries, redirect to that page
 / /tw 302 Country=hk,tw
 / /cn 302 Country=cn
+/ /ph 302 Country=ph
 
 # if user want to see english version, take them to /en which shadows the root (English) page
 /en / 200
