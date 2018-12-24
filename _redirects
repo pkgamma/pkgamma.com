@@ -6,3 +6,6 @@
 
 # invalid URL gets sent to root (/ doesn't work for some reason)
 /*  https://pkgamma.com
+
+# Redirect default Netlify subdomain to primary domain
+http://pkgammadigital.netlify.com/* http://pkgamma.com/:splat 301!
