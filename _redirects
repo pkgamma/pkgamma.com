@@ -1,5 +1,6 @@
 # if certain countries, redirect to that page
-/ /tw 302 Country=cn,hk,tw
+/ /tw 302 Country=hk,tw
+/ /cn 302 Country=cn
 
 # if user want to see english version, take them to /en which shadows the root (English) page
 /en / 200
@@ -8,5 +9,4 @@
 /*  https://pkgamma.com 302
 
 # Redirect default Netlify subdomain to primary domain
-https://pkgammadigital.netlify.com   https://pkgamma.com        301!
 https://pkgammadigital.netlify.com/* https://pkgamma.com/:splat 301!
