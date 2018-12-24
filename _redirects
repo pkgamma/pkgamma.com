@@ -8,4 +8,5 @@
 /*  https://pkgamma.com
 
 # Redirect default Netlify subdomain to primary domain
-http://pkgammadigital.netlify.com/* http://pkgamma.com/:splat 301!
+http://pkgammadigital.netlify.com/* https://pkgamma.com/:splat 301!
+http://pkgammadigital.netlify.com   https://pkgamma.com 301!
