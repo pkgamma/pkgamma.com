@@ -14,3 +14,5 @@
 
 # Redirect default Netlify subdomain to primary domain
 https://pkgammadigital.netlify.com/* https://pkgamma.com/:splat 301!
+
+/startup /startups
