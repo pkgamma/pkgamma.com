@@ -1,6 +1,7 @@
 /startup /startups
 
-/meet https://calendly.com/pkgamma/meet
+/meet        https://calendly.com/pkgamma/meet
+/appointment https://calendly.com/pkgamma/meet
 
 # if certain countries, redirect to that page
 / /tw 302 Country=hk,tw
