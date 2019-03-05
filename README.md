@@ -1,4 +1,4 @@
-# pkgamma.com
+# pkgamma.com [![Netlify Status](https://api.netlify.com/api/v1/badges/9e9a9690-eef4-432a-a771-1797b7d78cd4/deploy-status)](https://app.netlify.com/sites/pkgammadigital/deploys)
 
 This is the static sources of PKGamma's agency website. Built with [Eleventy](https://www.11ty.io/) and hosted on [Netlify](https://www.netlify.com/). Netlify builds the site automatically every time the source files are pushed to the [git repo](https://github.com/pkgamma/pkgamma.com) so that I don't have to build locally.
 
